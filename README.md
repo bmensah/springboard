@@ -1,2 +1,2 @@
 # Springboard
-Repo for SpringBoard assignments and projects. 
+This is a repo for SpringBoard assignments and projects. 
