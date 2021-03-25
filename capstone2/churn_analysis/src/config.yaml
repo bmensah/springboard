@@ -13,6 +13,7 @@ trainingInput:
     goal: MAXIMIZE
     hyperparameterMetricTag: recall
     enableTrialEarlyStopping: True
+    booster: gbtree
     params:
       - parameterName: learning_rate
         type: DOUBLE
