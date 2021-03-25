@@ -45,7 +45,7 @@ parser.add_argument(
         default=6,
         type=int
         )
-perser.add_argument(
+parser.add_argument(
         "--min_child_weight",
         help="minimum sum of instance weight needed in a child",
         default=1,
