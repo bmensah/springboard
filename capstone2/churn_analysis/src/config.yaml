@@ -13,8 +13,10 @@ trainingInput:
     goal: MAXIMIZE
     hyperparameterMetricTag: recall
     enableTrialEarlyStopping: True
-    booster: gbtree
     params:
+      - parameterName: objective
+        type: CATEGORICAL
+        categoricalValues: binary:logistic
       - parameterName: learning_rate
         type: DOUBLE
         minValue: 0.3
