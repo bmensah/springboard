@@ -88,18 +88,12 @@ subprocess.check_call(['gsutil', 'cp', os.path.join(data_dir, target_filename), 
 # [END download-data]
 
 # [START load-into-pandas]
-# Load data into pandas, then use `.values` to get NumPy arrays
-data = pd.read_csv(data_filename)#.values
-target = pd.read_csv(target_filename)#.values
-
-# Convert one-column 2D array into 1D array for use with xgboost
-#target = target.reshape((target.size,))
+# Load data into pandas dataframes
+data = pd.read_csv(data_filename)
+target = pd.read_csv(target_filename)
 # [END load-into-pandas]
 
 # [START train-and-save-model]
-# Load data into DMatrix object
-#dtrain = xgb.DMatrix(data, label=target)
-
 # Split data into training and verification splits
 X_train, X_test, y_train, y_test = train_test_split(data, target, test_size=0.3)
 
@@ -112,7 +106,6 @@ model = XGBClassifier(
         colsample_bytree=args.colsample_bytree,
         gamma=args.gamma
         )
-#bst = xgb.train({}, dtrain, 20)
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
