@@ -1,0 +1,51 @@
+trainingInput:
+  scaleTier: CUSTOM
+  # Configure a master worker with 4 T4 GPUs
+  masterType: n1-highcpu-16
+  masterConfig:
+    acceleratorConfig:
+      count: 4
+      type: NVIDIA_TESLA_T4
+  # Configure 9 workers, each with 4 T4 GPUs
+  workerCount: 9
+  workerType: n1-highcpu-16
+  workerConfig:
+    acceleratorConfig:
+      count: 4
+      type: NVIDIA_TESLA_T4
+  # Configure 3 parameter servers with no GPUs
+  parameterServerCount: 3
+  parameterServerType: n1-highmem-8
+  # Configure hyperparameters
+  hyperparameters:
+    goal: MAXIMIZE
+    algorithm: RANDOM_SEARCH
+    hyperparameterMetricTag: "recall"
+    enableTrialEarlyStopping: True
+    params:
+      - parameterName: "learning_rate"
+        type: DOUBLE
+        minValue: 0.3
+        maxValue: 0.9
+        scaleType: UNIT_LINEAR_SCALE
+      - parameterName: "max_depth"
+        type: INTEGER
+        minValue: 1
+        maxValue: 9
+        scaleType: UNIT_LINEAR_SCALE
+      - parameterName: "min_child_weight"
+        type: INTEGER
+        minValue: 1
+        maxValue: 7
+        scaleType: UNIT_LINEAR_SCALE
+      - parameterName: "colsample_bytree"
+        type: DOUBLE
+        minValue: 0.1
+        maxValue: 0.8
+        scaleType: UNIT_LINEAR_SCALE
+      - parameterName: "gamma"
+        type: DOUBLE
+        minValue: 0.1
+        maxValue: 0.5
+        scaleType: UNIT_LINEAR_SCALE
+
