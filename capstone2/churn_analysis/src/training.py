@@ -128,8 +128,8 @@ hpt.report_hyperparameter_tuning_metric(
         )
 
 # Export the classifier to a file
-with open('model.pkl', "wb") as model_file:
-    pickle.dump(model, model_file)
+with open("model.pkl", "wb") as model_filename:
+    pickle.dump(model, model_filename)
 # [END train-and-save-model]
 
 # [START upload-model]
