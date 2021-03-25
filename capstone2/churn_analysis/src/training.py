@@ -86,7 +86,7 @@ data = pd.read_csv(data_filename)#.values
 target = pd.read_csv(target_filename)#.values
 
 # Convert one-column 2D array into 1D array for use with xgboost
-target = target.reshape((target.size,))
+#target = target.reshape((target.size,))
 # [END load-into-pandas]
 
 # [START train-and-save-model]
