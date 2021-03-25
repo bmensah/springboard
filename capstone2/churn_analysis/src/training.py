@@ -51,13 +51,13 @@ parser.add_argument(
         default=1,
         type=int
         )
-parder.add_argument(
+parser.add_argument(
         "--colsample_bytree",
         help="subsample ratio of columns when constructing each tree",
         default=0.1,
         type=float
         )
-parder.add_argument(
+parser.add_argument(
         "--gamma",
         help="Minimum loss reduction required to make a further partition on a leaf node of the tree.",
         default=0.1,
