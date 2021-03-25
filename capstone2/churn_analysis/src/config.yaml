@@ -12,30 +12,30 @@ trainingInput:
   hyperparameters:
     goal: MAXIMIZE
     algorithm: RANDOM_SEARCH
-    hyperparameterMetricTag: "recall"
+    hyperparameterMetricTag: recall
     enableTrialEarlyStopping: True
     params:
-      - parameterName: "learning_rate"
+      - parameterName: learning_rate
         type: DOUBLE
         minValue: 0.3
         maxValue: 0.9
         scaleType: UNIT_LINEAR_SCALE
-      - parameterName: "max_depth"
+      - parameterName: max_depth
         type: INTEGER
         minValue: 1
         maxValue: 9
         scaleType: UNIT_LINEAR_SCALE
-      - parameterName: "min_child_weight"
+      - parameterName: min_child_weight
         type: INTEGER
         minValue: 1
         maxValue: 7
         scaleType: UNIT_LINEAR_SCALE
-      - parameterName: "colsample_bytree"
+      - parameterName: colsample_bytree
         type: DOUBLE
         minValue: 0.1
         maxValue: 0.8
         scaleType: UNIT_LINEAR_SCALE
-      - parameterName: "gamma"
+      - parameterName: gamma
         type: DOUBLE
         minValue: 0.1
         maxValue: 0.5
