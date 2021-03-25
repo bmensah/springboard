@@ -59,7 +59,7 @@ parser.add_argument(
         )
 parser.add_argument(
         "--gamma",
-        help="Minimum loss reduction required to make a further partition on a leaf node of the tree.",
+        help="Minimum loss reduction required to make a further partition on a leaf node of the tree",
         default=0.1,
         type=float
         )

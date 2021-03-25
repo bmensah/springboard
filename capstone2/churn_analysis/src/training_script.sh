@@ -6,7 +6,7 @@ MAIN_TRAINER_MODULE="xgboost_trainer.training"
 HPTUNING_CONFIG="config.yaml"
 RUNTIME_VERSION=2.4 
 PYTHON_VERSION=3.7 
-JOB_DIR=gs://$BUCKET_NAME/xgboost_job_dir 
+JOB_DIR="gs://$BUCKET_NAME/xgboost_job_dir" 
 gcloud ai-platform jobs submit training $JOB_NAME \
         --package-path $TRAINER_PACKAGE_PATH \
         --module-name $MAIN_TRAINER_MODULE \
