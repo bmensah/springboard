@@ -28,6 +28,12 @@ from sklearn.model_selection import train_test_split
 parser = argparse.ArgumentParser()
 
 parser.add_argument(
+        "--job-dir",
+        help="GCS location to write checkpoints and export models",
+        required=True
+        )
+
+parser.add_argument(
         "--objective",
         help="evaluation metric",
         default="binary:logistic",
