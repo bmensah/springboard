@@ -18,7 +18,7 @@ trainingInput:
       - parameterName: objective
         type: CATEGORICAL
         categoricalValues: binary:logistic
-      - parameterName: learning_rate
+      - parameterName: eta
         type: DOUBLE
         minValue: 0.3
         maxValue: 0.9
