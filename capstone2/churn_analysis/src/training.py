@@ -18,6 +18,7 @@ import subprocess
 import sys
 import argparse
 import hypertune
+import pickle
 import pandas as pd
 from xgboost import XGBClassifier
 from sklearn.metrics import recall_score
@@ -127,8 +128,8 @@ hpt.report_hyperparameter_tuning_metric(
         )
 
 # Export the classifier to a file
-model_filename = 'model.bst'
-bst.save_model(model_filename)
+model_filename = 'model.pkl'
+pickle.dump(model, model_filename)
 # [END train-and-save-model]
 
 # [START upload-model]
