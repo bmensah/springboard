@@ -1,21 +1,13 @@
 trainingInput:
   scaleTier: CUSTOM
-  # Configure a master worker with 4 T4 GPUs
+  # Configure TPUs
   masterType: n1-highcpu-16
-  masterConfig:
-    acceleratorConfig:
-      count: 4
-      type: NVIDIA_TESLA_T4
-  # Configure 9 workers, each with 4 T4 GPUs
-  workerCount: 9
-  workerType: n1-highcpu-16
+  workerType: cloud_tpu
+  workerCount: 1
   workerConfig:
     acceleratorConfig:
-      count: 4
-      type: NVIDIA_TESLA_T4
-  # Configure 3 parameter servers with no GPUs
-  parameterServerCount: 3
-  parameterServerType: n1-highmem-8
+      type: TPU_V2
+      count: 8
   # Configure hyperparameters
   hyperparameters:
     goal: MAXIMIZE
