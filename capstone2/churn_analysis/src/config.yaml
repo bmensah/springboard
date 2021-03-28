@@ -11,7 +11,7 @@ trainingInput:
   # Configure hyperparameters
   hyperparameters:
     goal: MAXIMIZE
-    #algorithm: RANDOM_SEARCH
+    algorithm: RANDOM_SEARCH
     hyperparameterMetricTag: recall
     enableTrialEarlyStopping: True
     params:
