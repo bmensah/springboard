@@ -70,6 +70,12 @@ parser.add_argument(
         default=0.1,
         type=float
         )
+parser.add_argument(
+        "--scale_pos_weight",
+        help="Correct class imbalance",
+        default=1.0,
+        type=float
+        )
 
 args = parser.parse_args()
 
