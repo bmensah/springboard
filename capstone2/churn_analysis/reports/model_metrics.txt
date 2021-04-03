@@ -1,3 +1,17 @@
+Bradley Mensah
+Springboard Data Science
+November 2020 Cohort
+Capstone 2 Model Metrics
+
+
+The following is a list of the hyperparameters of the best performing model trained. 
+
+The model is an XGBoost classifier tuned using bayesian optimization.
+
+This model can be found here: https://github.com/bmensah/springboard/blob/main/capstone2/churn_analysis/models/bo_model.pkl
+
+Hyperparameters: 
+
 objective : binary:logistic
 base_score : 0.5
 booster : gbtree
@@ -17,9 +31,16 @@ num_parallel_tree : 1
 random_state : 0
 reg_alpha : 0
 reg_lambda : 1
-scale_pos_weight : 1
+scale_pos_weight : 20.0
 subsample : 1
 tree_method : exact
 validate_parameters : 1
 verbosity : None
 eta : 0.6000000000000001
+
+
+The metric used to train the XGBoost classifier was recall. 
+
+The model scored a recall of 0.90 on the training set and  0.88 on the test set. 
+
+AUC-ROC score was 0.96. 
