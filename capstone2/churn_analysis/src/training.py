@@ -110,7 +110,8 @@ model = XGBClassifier(
         max_depth=args.max_depth,
         min_child_weight=args.min_child_weight,
         colsample_bytree=args.colsample_bytree,
-        gamma=args.gamma
+        gamma=args.gamma,
+        scale_pos_weight=args.scale_pos_weight
         )
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
