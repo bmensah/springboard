@@ -43,4 +43,9 @@ trainingInput:
         minValue: 0.1
         maxValue: 0.5
         scaleType: UNIT_LINEAR_SCALE
+      - parameterName: scale_pos_weight
+        type: INTEGER
+        minValue: 10
+        maxValue: 40
+        scaleType: UNIT_LINEAR_SCALE
 
