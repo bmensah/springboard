@@ -33,16 +33,7 @@ Project Organization
         ├── src     
         |     ├── config.yaml <- Configuration file to 
         |     ├── training.py <- Training data to 
-        |     └── training_script.sh                                 
-        |   
-        ├── data     
-        |     └── processed
-        |	   ├── X_test.csv <- Transformed testing data.
-        |     	   ├── X_train.csv <- Transformed training data.
-        |           ├── y_test.csv <- Targets for test data.
-        |           ├── y_train.csv <- Targets for training data.
-        |           ├── dtype_map.csv <- Dictionary of datatypes.
-        |           └── combined.csv <- Dataframe with raw training data merged.                                    
+        |     └── training_script.sh                                                                   
         |
         └── requirements.txt <- Package versions for reproducing the virtual environment.
 
