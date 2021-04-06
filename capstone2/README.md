@@ -15,10 +15,10 @@ Project Organization
     |
     └── churn_analysis
         ├── capstone2_notebooks   
-        |     ├── Capstone2_Data_Wrangling.ipynb
-        |     ├── Capstone2_EDA.ipynb
-        |     ├── Capstone2_Pre-processing.ipynb
-        |     └── Capstone2_Modeling.ipynb
+        |     ├── Capstone2_Data_Wrangling.ipynb <- Data Wrangling: merge raw files and perform initial data cleaning.
+        |     ├── Capstone2_EDA.ipynb <- Exploratory Data Analysis: visualize data.
+        |     ├── Capstone2_Pre-processing.ipynb <- Pre-processing and Training: process data, define metrics, train various models and choose best.
+        |     └── Capstone2_Modeling.ipynb <- Tune hyperparameters and model various scenarios.
         |	 
         ├── models
         |     ├── bo_model.pkl <- XGBoost model tuned via bayesian optimization.
@@ -31,9 +31,9 @@ Project Organization
         |     └── model_metric.txt <- Metrics for the final model chosen. 
         |
         ├── src     
-        |     ├── config.yaml <- Configuration file to 
-        |     ├── training.py <- Training data to 
-        |     └── training_script.sh                                                                   
+        |     ├── config.yaml <- Hyperparameters for model tuning on Google Cloud Platform (GCP).
+        |     ├── training.py <- Code to link data, model, and hyperparameters.
+        |     └── training_script.sh <- Script to run hyperparameter tuning on GCP.                                                                   
         |
         └── requirements.txt <- Package versions for reproducing the virtual environment.
 
