@@ -14,17 +14,20 @@ From this context, I developed the following problem statement:
 
 **What opportunities exist for airlines to increase customer retention by 5% within one quarter through developing loyalty programs, offering more destinations, or improving brand reputation?**
 
-	In order to answer this question, I sourced labelled tweets in order to train a model to distinguish between a positive and negative tweet. I also sourced airline customers’ tweets and the airlines’ responses. Both datasets were found on Kaggle. The labelled data was a 1.6 million tweet dataset (800,000 positive tweets, 800,000 negative tweets). The airline tweets were a part of a larger dataset of customer service tweets for over 100 companies.
+In order to answer this question, I sourced labelled tweets in order to train a model to distinguish between a positive and negative tweet. I also sourced airline customers’ tweets and the airlines’ responses. Both datasets were found on Kaggle. The labelled data was a 1.6 million tweet dataset (800,000 positive tweets, 800,000 negative tweets). The airline tweets were a part of a larger dataset of customer service tweets for over 100 companies.
 
 
 
 **Data source citations:**
  
 [Labelled Sentiment Tweets](https://www.kaggle.com/kazanova/sentiment140):
+
 **Citation:** Go, A., Bhayani, R. and Huang, L., 2009. Twitter sentiment classification using distant supervision. CS224N Project Report, Stanford, 1(2009), p.12.
  
 [Customer Service Tweets](https://www.kaggle.com/thoughtvector/customer-support-on-twitter):
+
 **Citation:** Thought Vector and Axelbrooke, Stuart (December 2017). Customer Service on Twitter, Version 10. Retrieved 4 May 2021 from: https://www.kaggle.com/thoughtvector/customer-support-on-twitter.
+
 **License:** CC BY-NC-SA 4.0
 
 
