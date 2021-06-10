@@ -19,9 +19,7 @@ Project Organization
     │   └── Mensah_Capstone3_Report.pdf
     │   └── Cap3_SlideDeck.pdf     
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment.
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+    └──requirements.txt   <- The requirements file for reproducing the analysis environment. 
 
 
 --------
